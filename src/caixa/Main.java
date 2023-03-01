@@ -3,10 +3,21 @@ package caixa;
 public class Main {
 
 	public static void main(String[] args) {
-		printTOpOrBottom(6);
-		printLeftandRight(6, 2);
-		printTOpOrBottom(6);
-
+		printBox(4, 4);
+		printBox(8, 4);
+		printBox(5, 5);
+	}
+	
+	public static void printBox(int width, int height) {
+		if (width < 4) {
+			width = 4;
+		}
+		if (height < 4) {
+			height = 4;
+		}
+		printTOpOrBottom(width);
+		printLeftandRight(width, height-2);
+		printTOpOrBottom(width);
 	}
 	public static void printTOpOrBottom(int size) {
 		for (int i = 0; i <size ; i++) {
