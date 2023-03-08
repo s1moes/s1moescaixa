@@ -18,7 +18,7 @@ public class Main {
 		
 		
 		
-		Caixa caixa = new Caixa(3, 3, '+');
+		Caixa caixa = new Caixa(width, height, '+');
 		
 		try {
 		caixa.print();
