@@ -1,5 +1,8 @@
 package caixa;
 
+import caixa.errors.NotEnoughtHeightException;
+import caixa.errors.NotEnoughtWidthException;
+
 public class Caixa {
 
 	private int width;
@@ -14,12 +17,23 @@ public class Caixa {
 	public Caixa(int widthParam, int heightParam) {
 		this(widthParam, heightParam, '*');
 	}
-	public void print() {
+	public void print() throws Exception {
 		if (width < 4) {
-			width = 4;
+			//width = 4;
+			//Unchecked Exception
+			//throw new RuntimeException("Width cannot be less than 4");
+		
+		
+			//Checked Exception
+			//throw new Exception("Width cannot be less than 4");
+			throw new NotEnoughtWidthException("Width cannot be less than 4");
+		
 		}
 		if (height < 4) {
-			height = 4;
+			//height = 4;
+			//Unchecked Exception
+			//throw new RuntimeException("Width cannot be less than 4");
+			throw new NotEnoughtHeightException("Height cannot be less than 4");
 		}
 		printTOpOrBottom();
 		printLeftandRight();
