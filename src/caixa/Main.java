@@ -21,8 +21,7 @@ public class Main {
 		}catch (NotEnoughtWidthException e) {
 			System.out.println("Ocorreu um erro ao desenhar a caixa! Largura tem que ser maior que 3");
 		}catch (NotEnoughtHeightException e) {
-			System.out.println("Ocorreu um erro ao desenhar a  caixa! Altura tem que ser maior que 3");
+			System.out.println("Ocorreu um erro ao desenhar a caixa! Altura tem que ser maior que 3");
 		}
 	}
-	
 }
