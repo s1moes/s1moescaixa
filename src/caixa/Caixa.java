@@ -17,7 +17,7 @@ public class Caixa {
 	public Caixa(int widthParam, int heightParam) {
 		this(widthParam, heightParam, '*');
 	}
-	public void print() throws Exception {
+	public void print() throws NotEnoughtWidthException, NotEnoughtHeightException {
 		if (width < 4) {
 			//width = 4;
 			//Unchecked Exception
