@@ -1,7 +1,6 @@
 package caixa;
 
 import java.util.Scanner;
-
 import caixa.errors.NotEnoughtHeightException;
 import caixa.errors.NotEnoughtWidthException;
 
@@ -16,10 +15,7 @@ public class Main {
 		System.out.print("Height: ");
 		int height = in.nextInt();
 		
-		
-		
 		Caixa caixa = new Caixa(width, height, '+');
-		
 		try {
 		caixa.print();
 		}catch (NotEnoughtWidthException e) {
